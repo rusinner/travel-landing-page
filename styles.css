@@ -32,6 +32,23 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.heading span {
+  color: #29d9d5;
+  font-size: 2rem;
+}
+.heading h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -90,12 +107,186 @@ body {
   display: none;
 }
 
+.home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(./images/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.home .content {
+  text-align: center;
+}
+.home .content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #fff;
+  font-size: 4vh;
+}
+.home .content h3 {
+  font-size: 6vh;
+  color: #fff;
+}
+.home .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.book-form {
+  width: 80%;
+  margin: 1rem auto;
+  margin-top: -5rem;
+  background: #222;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+  padding: 3rem 2rem;
+}
+.book-form form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.book-form form .inputBox {
+  flex: 1 1 25rem;
+}
+.book-form form .inputBox span {
+  font-size: 1.4rem;
+  color: #aaa;
+}
+.book-form form .inputBox input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border-radius: 5rem;
+  border: 0.2rem solid #29d9d5;
+  font-size: 1.6rem;
+  color: #aaa;
+  text-transform: none;
+  background: none;
+  margin-top: 1rem;
+}
+.book-form form .btn {
+  flex: 1 1 15rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.about .video-container {
+  flex: 1 1 42rem;
+}
+.about .video-container video {
+  border-radius: 1rem;
+  width: 100%;
+}
+.about .video-container .controls {
+  text-align: center;
+  padding: 2rem 0;
+}
+.about .video-container span {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  margin: 1rem;
+}
+.about .video-container span:hover {
+  background: #29d9d5;
+}
+.about .content {
+  flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+.about .content span {
+  color: #29d9d5;
+  font-size: 2rem;
+}
+.about .content h3 {
+  color: #fff;
+  font-size: 5rem;
+  margin-top: 0.5rem;
+}
+.about .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.destination .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+.destination .box-container .box {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #222;
+}
+.destination .box-container .box:hover img {
+  transform: scale(1.1);
+}
+.destination .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+.destination .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.destination .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+.destination .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.destination .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+.destination .box-container .box .content a {
+  font-size: 1.7rem;
+  color: #29d9d5;
+}
+.destination .box-container .box .content a:hover i {
+  padding-left: 1rem;
+}
+.destination .box-container .box .content a i {
+  padding-right: 0.5rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   .header {
     padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -120,9 +311,21 @@ body {
     font-size: 2rem;
     display: block;
   }
+  .home {
+    margin-top: 10rem;
+  }
+  .home .content span {
+    font-size: 8vw;
+  }
+  .home .content h3 {
+    font-size: 9vh;
+  }
 }
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .about .content h3 {
+    font-size: 3.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
