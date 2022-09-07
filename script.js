@@ -7,5 +7,6 @@ document.querySelectorAll('.about .video-container .controls .control-btn').forE
     btn.onclick =() =>{
         let src = btn.getAttribute('data-src');
         document.querySelector('.about .video-container .video').src = src;
+        
     }
 })
